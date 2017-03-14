@@ -469,7 +469,7 @@ var bot = new Bot({
 });
 
 bot.on('message', function(data) {
-    if (data.text === "Patrick's a back end guy") {
+    if (data.text === "Patrick's a back end guy" || data.text === "infinite loop") {
         bot.postMessage('bot-test-channel', "Hey kenjisbot, what does Patrick do?");
     }
 });
