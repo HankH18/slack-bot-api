@@ -464,5 +464,14 @@ class Bot extends EventEmitter {
         });
     }
 }
+var bot = new Bot({
+    token: 'xoxb-153240165810-TRPXFWCrWrlxPIh45ggYry9T'
+});
+
+bot.on('message', function(data) {
+    if (data.text === "Patrick's a back end guy") {
+        bot.postMessage('bot-test-channel', "Hey kenjisbot, what does Patrick do?");
+    }
+});
 
 module.exports = Bot;
