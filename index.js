@@ -466,7 +466,6 @@ class Bot extends EventEmitter {
 }
 var bot = new Bot({
     token: 'xoxb-153240165810-TRPXFWCrWrlxPIh45ggYry9T'
-    name: "hankbot"
 });
 
 bot.on('message', function(data) {
